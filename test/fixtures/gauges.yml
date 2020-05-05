@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  flood_stage: 1.5
+  water_level: 1.5
+  water_flow: 1.5
+
+two:
+  location: MyString
+  flood_stage: 1.5
+  water_level: 1.5
+  water_flow: 1.5

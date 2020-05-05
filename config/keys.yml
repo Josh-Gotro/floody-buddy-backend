@@ -1,0 +1,13 @@
+# clearly i have no idea what im doing. i created this file in attempt to secretly store api keys
+#development:
+#weather_key: bPK0HuoG8AxZAKae0jqPSu4ZyHxhxOKf
+#
+#test:
+#weather_key: bPK0HuoG8AxZAKae0jqPSu4ZyHxhxOKf
+#
+#production:
+#weather_key: ENV["WEATHER_KEY"]
+
+
+#find or create .gitignore file on github repository
+# add keys.yml to it
