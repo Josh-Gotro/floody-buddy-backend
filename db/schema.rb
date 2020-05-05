@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_04_221325) do
+ActiveRecord::Schema.define(version: 2020_05_05_191322) do
 
   create_table "gauges", force: :cascade do |t|
     t.string "location"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_05_04_221325) do
     t.float "water_flow"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "site_number"
   end
 
   create_table "user_gauges", force: :cascade do |t|

@@ -16,7 +16,7 @@ UserGauge.delete_all
 end
 
 5.times do 
-    Gauge.create(location: Faker::Address.street_name, flood_stage: rand(5.1..14.0), water_level: rand(20), water_flow: rand(7.0))
+    Gauge.create(location: Faker::Address.street_name, flood_stage: rand(5.1..14.0), water_level: rand(20), water_flow: rand(7.0), site_number: rand(10000..90000))
 end
 
 UG_01 = UserGauge.create(user_id: User.first.id, gauge_id: Gauge.fifth.id)
