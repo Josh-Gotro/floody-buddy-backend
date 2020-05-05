@@ -8,8 +8,9 @@ class UserGaugesController < ApplicationController
     def show
         usergauge = UserGauge.find_by(id: params[:id])
         if usergauge
-        render json: usergauge
+            render json: usergauge
         else
             render json: {message: "sorry friend, no info here"}
+        end
     end
 end
