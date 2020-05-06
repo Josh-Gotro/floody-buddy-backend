@@ -11,8 +11,18 @@ class UsersController < ApplicationController
         if user
             render json: {id: user.id, name: user.name, password: user.password, gauges: user.gauges } 
         else 
-            render json: {message: 'fuck off bitch'}
+            render json: {message: 'no record available'}
         end
     end
+    
+    def new
+        user = User.new
+        
+    end
+    
+    def create
+        user = User.create
+    end
+    
     
 end
