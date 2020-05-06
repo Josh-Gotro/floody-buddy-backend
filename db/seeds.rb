@@ -12,7 +12,7 @@ UserGauge.delete_all
 
 
 5.times do
-    User.create(name: Faker::Name.unique.name, password: "123" )
+    User.create(name: Faker::Internet.unique.username, password: "123" )
 end
 
 5.times do 
