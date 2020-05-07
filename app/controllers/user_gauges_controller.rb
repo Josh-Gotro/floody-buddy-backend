@@ -13,4 +13,10 @@ class UserGaugesController < ApplicationController
             render json: {message: "sorry friend, no info here"}
         end
     end
+    
+    def destroy
+        usergauge = UserGauge.find_by({id: params[:id]})   
+        usergauge.destroy
+    end
+    
 end
