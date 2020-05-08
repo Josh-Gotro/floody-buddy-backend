@@ -17,6 +17,10 @@ locations = ["Barton Ck at SH 71", "Shoal Ck at Silverway Dr", "Waller Ck at Koe
     User.create(name: Faker::Internet.unique.username, password: "123" )
 end
 
+locations.each{|loc|
+    Gauge.create(location: loc, flood_stage: rand(5.1..14.0), water_level: rand(20), water_flow: rand(7.0), site_number: rand(10000..90000))
+}
+
 5.times do 
     Gauge.create(location: Faker::Address.street_name, flood_stage: rand(5.1..14.0), water_level: rand(20), water_flow: rand(7.0), site_number: rand(10000..90000))
 end
