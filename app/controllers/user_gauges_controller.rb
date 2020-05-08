@@ -15,7 +15,7 @@ class UserGaugesController < ApplicationController
     end
     
     def destroy
-        usergauge = UserGauge.find_by({id: params[:id]})   
+        usergauge = UserGauge.find_by({id: params[:id]}) 
         usergauge.destroy
     end
     
